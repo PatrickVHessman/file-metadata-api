@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>File Metadata Microservice</title>
+      <link rel="shortcut icon" href="http://patrickvhessman.com/favicon.ico" type="image/x-icon"/>
+      <style>
+          /****** Main Styling ******/
+
+body {
+	font-family: monospace;
+    font-size: 16px;
+    color: #222;
+    background-color: #eee;
+    text-align: center;
+    line-height: 1.4em;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;;
+}
+
+.container {
+	padding: 30px;
+    align-self: center;
+    border: 1px #222 solid;
+    background: #fff;
+    max-width: 800px;
+}
+
+#inputfield {
+  font-family: monospace;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+hr {
+	margin: 25px;
+}
+
+.footer {
+	margin-top: 40px;
+}
+
+a {
+	color: #2574A9;
+}
+      </style>
+   </head>
+
+   <body>
+    
+    <div class="container">
+        <h1>File Metadata Microservice</h1>
+    <hr />
+      <h3>Usage:</h3>
+      <p>Please upload a file. When you submit a file, you will receive the file name, type, and size in bytes in a JSON response.</p>
+
+      <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
+            <input id="inputfield" type="file" name="upfile">
+            <input id="button" type="submit" value="Upload">
+          </form>
+      <div class="footer">
+      <p>
+        Created by <a href="http://patrickvhessman.com/" target="_blank">Patrick Hessman</a> as a project for <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp.org</a> <br/> <a href="https://github.com/PatrickVHessman/file-metadata-api/" target="_blank">View Source</a>
+      </p>
+    </div>
+    </div>
+    
+  </body>
+</html>
